@@ -1,0 +1,18 @@
+//crear API con NetCore
+dotnet new api -n NombreAPI
+dotnet restore
+
+//correr la aplicacion
+dotnet run
+
+//por defecto correra en localhost:5000 o 5001 (en nustro caso es 5001)
+
+//paquetes descargados desde nuget
+dotnet add package Microsoft.EntityFrameworkCore.SQLite
+
+//para deshabilitar seguridad en chrome con windows
+//ve hasta la ruta raiz de chrome
+C:\Program Files (x86)\Google\Chrome\Application
+
+//ejecuta el siguiente comando
+chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security

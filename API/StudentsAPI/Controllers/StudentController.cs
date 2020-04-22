@@ -60,8 +60,8 @@ namespace StudentsAPI.Controllers
             }
             catch (DbUpdateException ex)
             {
-                if (ex.InnerException != null && ex.InnerException.SqliteErrorCode == 19)
-                    return Conflict("Username Already Exists");
+                //if (ex.InnerException != null && ex.InnerException.SqliteErrorCode == 19)
+                return Conflict("Username Already Exists");
             }
 
             return Accepted();
